@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
 
 :root {
-  --background: #6c747b;
+  --background: #1d1e1f;
   --lightgreen: #86c232;
   --deepgreen: #61892f;
   --lightgray: #6b6e70;
@@ -19,6 +19,9 @@ html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
+section {
+  min-width: 100vw;
+}
 a {
   text-decoration: none;
 }
@@ -35,11 +38,11 @@ img {
   object-fit: cover;
 }
 p {
-  color: var(--deepgray);
-  font-size: 1.4rem;
+  color: var(--brandcolor);
+  font-size: 2rem;
   margin-top: 5px;
   line-height: 2.5rem;
-  font-weight: 300;
+  font-weight: bolder;
   letter-spacing: 0.05rem;
 }
 .section-title {
@@ -58,7 +61,7 @@ p {
 .cta {
   display: inline-block;
   padding: 10px 30px;
-  color: var(--deepgray);
+  color: var(--brandcolor);
   background-color: transparent;
   border: 2px solid var(--deepgreen);
   font-weight: bolder;
@@ -71,7 +74,7 @@ p {
 }
 .cta:hover {
   color: var(--deepgray);
-  background-color: var(--deepgreen);
+  background-color: var(--lightgreen);
 }
 .brand h1 {
   font-size: 3rem;
@@ -93,7 +96,6 @@ p {
 }
 #header .header {
   min-height: 8vh;
-  background-color: var(--deepgreen);
   transition: 0.3s ease background-color;
 }
 #header .nav-bar {
@@ -157,7 +159,7 @@ p {
   height: 60px;
   width: 60px;
   display: inline-block;
-  border: 3px solid var(--deepgreen);
+  border: 3px solid white;
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -181,7 +183,7 @@ p {
   height: 2px;
   width: 30px;
   position: relative;
-  background-color: var(--deepgreen);
+  background-color: var(--lightgreen);
   z-index: -1;
 }
 #header .hamburger .bar::after,
@@ -224,7 +226,7 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+
   opacity: 0.7;
   z-index: -1;
 }
@@ -275,26 +277,27 @@ p {
 
 /* End Hero Section */
 
-/* Services Section */
-#services .services {
+/* skills Section */
+
+#skills .skills {
   flex-direction: column;
   text-align: center;
-  max-width: 1500px;
+  max-width: 70vw;
   margin: 0 auto;
   padding: 100px 0;
 }
-#services .service-top {
-  max-width: 500px;
+#skills .skill-top {
+  max-width: 700px;
   margin: 0 auto;
 }
-#services .service-bottom {
+#skills .skill-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 50px;
 }
-#services .service-item {
+#skills .skill-item {
   flex-basis: 80%;
   display: flex;
   align-items: flex-start;
@@ -302,40 +305,38 @@ p {
   flex-direction: column;
   padding: 30px;
   border-radius: 10px;
-  background-image: url(./img/img-1.png);
-  background-size: cover;
   margin: 10px 5%;
   position: relative;
   z-index: 1;
   overflow: hidden;
 }
-#services .service-item::after {
+#skills .skill-item::after {
   content: "";
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  background-color: var(--deepgray);
   opacity: 0.9;
   z-index: -1;
 }
-#services .service-bottom .icon {
+#skills .skill-bottom .icon {
   height: 80px;
   width: 80px;
   margin-bottom: 20px;
 }
-#services .service-item h2 {
-  font-size: 2rem;
-  color: white;
+#skills .skill-item h2 {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--deepgreen);
   margin-bottom: 10px;
-  text-transform: uppercase;
 }
-#services .service-item p {
+#skills .skill-item p {
   color: white;
   text-align: left;
 }
-/* End Services Section */
+/* End skills Section */
 
 /* Projects section */
 #projects .projects {
@@ -593,12 +594,12 @@ p {
   }
   /* End Hero */
 
-  /* Services Section */
-  #services .service-bottom .service-item {
+  /* skills Section */
+  #skills .skill-bottom .skill-item {
     flex-basis: 45%;
     margin: 2.5%;
   }
-  /* End Services Section */
+  /* End skills Section */
 
   /* Project */
   #projects .project-item {
@@ -706,7 +707,7 @@ p {
   }
   /* End header */
 
-  #services .service-bottom .service-item {
+  #skills .skill-bottom .skill-item {
     flex-basis: 22%;
     margin: 1.5%;
   }

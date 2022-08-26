@@ -1,6 +1,8 @@
 @import "https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap";
 
 :root {
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
   --background: #1d1e1f;
   --lightgreen: #86c232;
   --deepgreen: #61892f;
@@ -282,7 +284,7 @@ p {
 #skills .skills {
   flex-direction: column;
   text-align: center;
-  max-width: 70vw;
+  max-width: 100vw;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -290,52 +292,32 @@ p {
   max-width: 700px;
   margin: 0 auto;
 }
-#skills .skill-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 50px;
+
+.card-skills {
+  margin: auto;
+  text-align: center;
 }
-#skills .skill-item {
-  flex-basis: 80%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-direction: column;
-  padding: 30px;
-  border-radius: 10px;
-  margin: 10px 5%;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
+
+.skill-header {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  color: var(--lightgreen);
+  font-size: 2rem;
 }
-#skills .skill-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--deepgray);
-  opacity: 0.9;
-  z-index: -1;
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
 }
-#skills .skill-bottom .icon {
-  height: 80px;
-  width: 80px;
-  margin-bottom: 20px;
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
 }
-#skills .skill-item h2 {
-  font-size: 2.5rem;
-  font-weight: bolder;
-  color: var(--deepgreen);
-  margin-bottom: 10px;
-}
-#skills .skill-item p {
-  color: white;
-  text-align: left;
-}
+
 /* End skills Section */
 
 /* Projects section */
@@ -359,7 +341,7 @@ p {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 80%;
+  width: 70%;
   margin: 20px auto;
   overflow: hidden;
   border-radius: 10px;

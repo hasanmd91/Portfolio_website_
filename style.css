@@ -294,15 +294,8 @@ p {
 }
 
 .card-skills {
-  margin: auto;
+  margin: 40px auto auto auto;
   text-align: center;
-}
-
-.skill-header {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  color: var(--lightgreen);
-  font-size: 2rem;
 }
 
 .icon {
@@ -321,6 +314,7 @@ p {
 /* End skills Section */
 
 /* Projects section */
+
 #projects .projects {
   flex-direction: column;
   max-width: 1200px;
@@ -353,21 +347,27 @@ p {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  background-color: var(--deepgray);
   flex-direction: column;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  color: white;
+  color: var(--deepgray);
 }
 #projects .project-info h1 {
   font-size: 4rem;
-  font-weight: 500;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  color: rgb(227, 225, 225);
 }
-#projects .project-info h2 {
+#projects .project-info h2 a {
   font-size: 1.8rem;
   font-weight: 500;
-  margin-top: 10px;
+  color: rgb(227, 225, 225);
+  margin-bottom: 10px;
 }
+
 #projects .project-info p {
-  color: white;
+  color: rgb(227, 225, 225);
+  font-weight: 300;
+  margin-top: 15px;
 }
 #projects .project-img {
   flex-basis: 50%;
@@ -382,7 +382,7 @@ p {
   top: 0;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
   opacity: 0.7;
 }
 #projects .project-img img {
@@ -391,6 +391,7 @@ p {
 #projects .project-item:hover .project-img img {
   transform: scale(1.1);
 }
+
 /* End Projects section */
 
 /* About Section */
@@ -403,7 +404,7 @@ p {
 }
 #about .col-left {
   width: 250px;
-  height: 360px;
+  height: 30px;
 }
 #about .col-right {
   width: 100%;
@@ -413,12 +414,13 @@ p {
   font-weight: 500;
   letter-spacing: 0.2rem;
   margin-bottom: 10px;
+  font-family: sans-serif;
 }
 #about .col-right p {
   margin-bottom: 20px;
 }
 #about .col-right .cta {
-  color: black;
+  color: var(--background);
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;

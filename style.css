@@ -403,7 +403,7 @@ p {
 }
 #about .col-left {
   width: 250px;
-  height: 30px;
+  height: 360px;
 }
 #about .col-right {
   width: 100%;
@@ -413,13 +413,12 @@ p {
   font-weight: 500;
   letter-spacing: 0.2rem;
   margin-bottom: 10px;
-  font-family: sans-serif;
 }
 #about .col-right p {
   margin-bottom: 20px;
 }
 #about .col-right .cta {
-  color: var(--background);
+  color: black;
   margin-bottom: 50px;
   padding: 10px 20px;
   font-size: 2rem;

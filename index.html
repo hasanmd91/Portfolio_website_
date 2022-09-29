@@ -65,56 +65,40 @@
     <!-- skills Section -->
     <section id="skills">
       <div class="skills container">
-        <div class="skill-top">
+        <div>
           <h1 class="section-title">Skills</h1>
-          <p>
-            I have strong skills in Html, css, JavaScript, Typescript, React,
-            Redux, Mongodb and Node.js
-          </p>
         </div>
-        <div class="card-skills">
-          <div class="skills-wrapper">
-            <div class="first-set animate__animated animate__pulse">
-              <img
-                src="./icons/css3.svg"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-              <img
-                src="./icons/javascript.svg"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-              <img
-                src="icons/mongodb.svg"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-            </div>
+        <div class="skills_group">
+          <div class="skill">
+            <img src="./icons/css3.svg" alt="" />
+            <p>CSS 3</p>
+            <progress value="80" max="100">80%</progress>
+          </div>
+          <div class="skill">
+            <img src="./icons/typescript.svg" alt="" />
+            <p>Typescript</p>
+            <progress value="55" max="100">55%</progress>
+          </div>
 
-            <div class="second-set animate__animated animate__pulse">
-              <img
-                src="icons/nodejs.svg"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-              <img
-                src="icons/react.svg"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-              <img
-                src="icons/typescript.svg"
-                alt=""
-                loading="lazy"
-                class="icon icon-card"
-              />
-            </div>
+          <div class="skill">
+            <img src="./icons/javascript.svg" alt="" />
+            <p>Javascript</p>
+            <progress value="70" max="100">70%</progress>
+          </div>
+          <div class="skill">
+            <img src="./icons/react.svg" alt="" />
+            <p>React js</p>
+            <progress value="50" max="100">50%</progress>
+          </div>
+          <div class="skill">
+            <img src="./icons/nodejs.svg" alt="" />
+            <p>Node js</p>
+            <progress value="50" max="100">50%</progress>
+          </div>
+          <div class="skill">
+            <img src="./icons/mongodb.svg" alt="" />
+            <p>Mongodb</p>
+            <progress value="50" max="100">50%</progress>
           </div>
         </div>
       </div>
@@ -226,44 +210,15 @@
     <!-- Contact Section -->
     <section id="contact">
       <div class="contact container">
-        <div>
-          <h1 class="section-title">Contact <span>info</span></h1>
-        </div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="icon">
-              <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
-            </div>
-            <div class="contact-info">
-              <h1>Phone</h1>
-              <h2>+358 045 354 4797</h2>
-              <h2>+358 046 622 8020</h2>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/new-post.png"
-              />
-            </div>
-            <div class="contact-info">
-              <h1>Email</h1>
-              <h2>hasanmd1991@hotmail.com</h2>
-              <h2>hasansas008@gmail.com</h2>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">
-              <img
-                src="https://img.icons8.com/bubbles/100/000000/map-marker.png"
-              />
-            </div>
-            <div class="contact-info">
-              <h1>Address</h1>
-              <h2>Helsinki Finland</h2>
-            </div>
-          </div>
-        </div>
+        <form>
+          <h1>GET IN TOUCH</h1>
+
+          <input type="text" id="name" placeholder="Your name" required />
+
+          <input type="text" id="phone" placeholder="Phone no." required />
+          <textarea id="message" rows="10" placeholder=""></textarea>
+          <button id="button" type="submit">Send</button>
+        </form>
       </div>
     </section>
     <!-- End Contact Section -->
